@@ -11,9 +11,9 @@ and Node.js. After checking it out, you can run
 
     mvn package
 
-Pre-built packages can be downloaded from https://central.sonatype.com/artifact/org.mycore/mycore-viewer/2018.06.0.4/versions
-(e.g. https://repo1.maven.org/maven2/org/mycore/mycore-viewer/2018.06.0.4/mycore-viewer-2018.06.0.4.jar)
-You can rename it to mycore-viewer-2018.06.0.4.zip and then extract META-INF/resources/modules/iview2 into the current directory.
+Pre-built packages can be downloaded from https://central.sonatype.com/artifact/org.mycore/mycore-viewer/2022.06.1/versions
+(e.g. https://repo1.maven.org/maven2/org/mycore/mycore-viewer/2022.06.1/mycore-viewer-2022.06.1.jar)
+You can rename it to mycore-viewer-2022.06.0.1.zip and then extract META-INF/resources/modules/iview2 into the current directory.
 
 iview2-i18n contains the translations as set in the viewer-configuration through:
 
@@ -55,9 +55,9 @@ so our viewer-setting
 
 is properly picked up. For additional info about the viewer, have a look at the examples in https://github.com/MyCoRe-Org/mycore/tree/master/mycore-viewer/src/main/resources/example
 
-## TODO: Upgrade to 2019.06
+## Upgrade to 2022.06
 
-Switch to Bootstrap 4 / Fontawesome, see https://github.com/MyCoRe-Org/mycore/commit/b184a4a082b0f8a58d2b024c3cc89282052eaf1c#diff-5ddc56ba3dfd307bcff1b8c1bc4f9157
+This involves a switch to Bootstrap 4 / Fontawesome, see https://github.com/MyCoRe-Org/mycore/commit/b184a4a082b0f8a58d2b024c3cc89282052eaf1c#diff-5ddc56ba3dfd307bcff1b8c1bc4f9157
 
 ## Upgrade to 2018.06
 

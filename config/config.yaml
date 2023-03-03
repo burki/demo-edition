@@ -32,7 +32,7 @@ twig:
         piwikSiteId: "%piwik.site_id%"
         twitterSite: "%twitter.site%"
     form_themes:
-        - 'bootstrap_3_horizontal_layout.html.twig'
+        - 'bootstrap_4_horizontal_layout.html.twig'
     strict_variables: "%kernel.debug%"
     exception_controller: null
 
@@ -138,7 +138,7 @@ knp_paginator:
         sort_direction_name: direction # sort direction query parameter name
         #distinct: true                 # ensure distinct results, useful when ORM queries are using GROUP BY statements
     template:
-        pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig'
+        pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig'
         sortable: '@KnpPaginator/Pagination:sortable_link.html.twig' # sort link template
        
 eko_feed:
