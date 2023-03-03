@@ -5,6 +5,8 @@
 {% block head %}
     {{ map.head() }}
     {{ map.head_markercluster() }}
+
+    <script src="{{ app.request.basepath }}/js/blazy.min.js"></script>
 {% endblock %}
 
 {% block contenttop %}
@@ -21,7 +23,7 @@
                     {% if 'en' == app.request.locale %}
                         <p class="dta-p"><a href="{{ path('about') }}">About this edition...</a></p>
                     {% else %}
-                        <p><a href="{{ path('about') }}">Informationen über diese Edition...</a></p>
+                        <p class="dta-p"><a href="{{ path('about') }}">Informationen über diese Edition...</a></p>
                     {% endif %}
                 </div>
             </div>
@@ -33,7 +35,7 @@
                     </div>
                 </div>
                 <div class="row box-content">
-                    <div id="map">
+                    <div class="col-sm-12">
                         <div id="map-container">
                             <div id="map" style="width: 100%; min-height: 320px"></div>
                             <script>
