@@ -11,7 +11,7 @@ If you have any questions or find this code helpful, please contact us at
 Installation Notes
 ------------------
 Requirements
-- PHP >= 7.3 (check with `php -v`)
+- PHP 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - MySQL or MariaDB (for metadata storage)
 - Java 1.8 (for XSLT and Solr, check with `java -version`)
