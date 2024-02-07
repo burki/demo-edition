@@ -30,8 +30,8 @@ class ThemeRequestListener
 
     public function onKernelRequest(RequestEvent $event): void
     {
-        if (HttpKernelInterface::MASTER_REQUEST !== $event->getRequestType()) {
-            // don't do anything if it's not the master request
+        if (HttpKernelInterface::MAIN_REQUEST !== $event->getRequestType()) {
+            // don't do anything if it's not the main request
             return;
         }
 
