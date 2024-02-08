@@ -111,8 +111,8 @@
         "ddeboer/data-import": "0.20.*",
         "phpoffice/phpexcel": "dev-next#f839dd6 as 1.8.3",
 
-        "presta/sitemap-bundle": "^3.3",
-        "eko/feedbundle": "^2.2",
+        "presta/sitemap-bundle": "^4.0",
+        "eko/feedbundle": "2.2",
 
         "igdj/tei-edition-bundle": "dev-symfony-6",
 
