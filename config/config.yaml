@@ -7,7 +7,7 @@ parameters:
     locales: [de]
     default_locale: de  # for routing
     fallback_locale: en # for translation
-
+    
 framework:
     secret: '%kernel.secret%'
     # JMS\TranslationBundle\JMSTranslationBundle needs validation
@@ -25,7 +25,7 @@ twig:
         siteName: "kafka_ed"
         siteTagline: "A Demo Edition"
         sitePublisher: 'Institute for the History of the German Jews'
-        siteEmail: 'info@juedische-geschichte-online.net'
+        siteContact: 'info@juedische-geschichte-online.net'
         slugify: "@cocur_slugify"
         public_dir: "%app.public_dir%"
         webDir: "%app.public_dir%"
@@ -63,7 +63,7 @@ doctrine:
                     engine:  MyISAM     # InnoDB
     orm:
         # TODO: set a cache, see http://www.craftitonline.com/2015/04/doctrine-file-system-caching-with-doctrine-cache-bundle/
-        connection: default
+        connection: default        
         auto_generate_proxy_classes: '%kernel.debug%'
         auto_mapping: true
         dql:
@@ -111,7 +111,7 @@ jms_i18n_routing:
     hosts:
         de: '%jms_i18n_routing.hosts.de%'
     redirect_to_host: true
-
+    
 knp_menu:
     twig:
         template: knp_menu.html.twig
@@ -133,7 +133,7 @@ fs_solr:
             path: /
             core: demo_de
             timeout: 15
-
+            
 knp_paginator:
     page_range: 5                      # default page range used in pagination control
     default_options:
@@ -144,7 +144,7 @@ knp_paginator:
     template:
         pagination: '@KnpPaginator/Pagination/twitter_bootstrap_v3_pagination.html.twig'
         sortable: '@KnpPaginator/Pagination:sortable_link.html.twig' # sort link template
-
+       
 eko_feed:
     translation_domain: additional
     feeds:
