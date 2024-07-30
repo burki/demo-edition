@@ -7,6 +7,16 @@ parameters:
     locales: [de]
     default_locale: de  # for routing
     fallback_locale: en # for translation
+    app.site.publisher: "Institute for the History of the German Jews"
+    app.datacite.funding: '
+        <fundingReferences>
+          <fundingReference>
+            <funderName>Deutsche Forschungsgemeinschaft</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">http://dx.doi.org/10.13039/501100001659</funderIdentifier>
+            <awardNumber awardURI="http://gepris.dfg.de/gepris/projekt/268470421">268470421</awardNumber>
+            <awardTitle>Schlüsseldokumente zur deutsch-jüdischen Geschichte von der frühen Neuzeit bis in die Gegenwart. Erstellung eines nutzerfreundlichen Online-Quellenportals für das Fach Jüdische Geschichte</awardTitle>
+          </fundingReference>
+        </fundingReferences>'
     
 framework:
     secret: '%kernel.secret%'
@@ -24,7 +34,7 @@ twig:
         locales: "%locales%"
         siteName: "kafka_ed"
         siteTagline: "A Demo Edition"
-        sitePublisher: 'Institute for the History of the German Jews'
+        sitePublisher: "%app.site.publisher%"
         siteContact: 'info@juedische-geschichte-online.net'
         slugify: "@cocur_slugify"
         public_dir: "%app.public_dir%"

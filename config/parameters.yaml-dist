@@ -23,6 +23,7 @@ parameters:
     app.datacite.user: YOUR.USER
     app.datacite.password: "secret"
     app.datacite.prefix: YOUR.PREFIX
+    app.datacite.url_production_adjust: 'null'
 
     # if you want to use a wordpress installation for news
     # app.wp-rest.url: "http://your.site/wordpress/"
