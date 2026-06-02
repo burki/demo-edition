@@ -11,7 +11,7 @@ If you have any questions or find this code helpful, please contact us at
 Installation Notes
 ------------------
 Requirements
-- PHP >= 7.3 (check with `php -v`)
+- PHP >= 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - MySQL or MariaDB (for metadata storage)
 - Java 1.8 (for XSLT and Solr, check with `java -version`)
@@ -36,11 +36,9 @@ Create database
 
     mysqladmin -u root -p create demo_edition
 
-and create a database user with proper rights, e.g.
+Create a database user and grant the needed privileges, e.g.
 
     mysql -u root -p demo_edition
-
-Create a user and grant the needed privileges
 
     CREATE USER 'demo_edition'@'localhost' IDENTIFIED BY 'YOUR_PASSWORD';
     GRANT ALL ON demo_edition.* TO 'demo_edition'@'localhost';
@@ -233,7 +231,7 @@ to the font files used.
 
 License
 -------
-    (C) 2021-2024 Institut für die Geschichte der deutschen Juden,
+    (C) 2021-2026 Institut für die Geschichte der deutschen Juden,
         Daniel Burckhardt
 
 
