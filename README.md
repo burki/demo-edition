@@ -14,7 +14,7 @@ Requirements
 - PHP >= 8.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - MySQL or MariaDB (for metadata storage)
-- Java 1.8 (for XSLT and Solr, check with `java -version`)
+- Java 1.11 (for XSLT and Solr, check with `java -version`)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 
 In a fitting directory (e.g. `/var/www`), clone the project
@@ -79,7 +79,7 @@ line in `parameters.yaml`:
 
 On Windows, it might look like
 
-    app.xslt.adapter.arguments: "c:\\Run\\Java\\jdk1.8\\bin\\java -jar %kernel.project_dir%\\bin\\saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
+    app.xslt.adapter.arguments: "c:\\Run\\Java\\jdk1.11\\bin\\java -jar %kernel.project_dir%\\bin\\saxon9he.jar -s:%%source%% -xsl:%%xsl%% %%additional%%"
 
 depending on your local Java installation.
 
@@ -247,3 +247,11 @@ License
 
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Third Party Code
+----------------
+This projects builds on numerous third-party projects under a variety of
+Open Source Licenses. Please check `composer.json` for these dependencies.
+
+The XSLT-Stylesheets are based on the files from
+    https://github.com/haoess/dta-tools/tree/master/stylesheets
