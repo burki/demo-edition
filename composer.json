@@ -116,8 +116,7 @@
 
         "igdj/tei-edition-bundle": "dev-symfony-6",
 
-        "vnn/wordpress-rest-api-client": "dev-master",
-        "guzzlehttp/guzzle": "^6.5"
+        "vnn/wordpress-rest-api-client": "dev-master"
     },
     "conflict": {
         "cocur/slugify": "4.5.0"
